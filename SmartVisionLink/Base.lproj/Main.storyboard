@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -36,7 +36,6 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GJ1-Vk-CCq">
                                 <rect key="frame" x="16" y="61" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -66,6 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="SystemColor"/>
+                        <color key="sectionIndexBackgroundColor" name="SystemColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bleDeviceTableHeaderCell" id="Npv-A5-piy">
                                 <rect key="frame" x="0.0" y="50" width="375" height="85"/>
@@ -141,6 +141,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="SystemColor"/>
+                        <color key="sectionIndexBackgroundColor" name="SystemColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lightHeaderCell" rowHeight="78" id="adw-fW-61t">
                                 <rect key="frame" x="0.0" y="50" width="375" height="78"/>
@@ -160,6 +161,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="SystemColor"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" name="SystemColor"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lightCell" rowHeight="78" id="osb-CA-DFd" customClass="LightTableViewCell" customModule="SmartVisionLink" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="128" width="375" height="78"/>
@@ -217,6 +219,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="SystemColor"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" name="SystemColor"/>
                                 <connections>
                                     <outlet property="FirmwareLabel" destination="ogu-o3-DL6" id="k0m-X3-jzC"/>
                                     <outlet property="firmwareLabel" destination="ogu-o3-DL6" id="9In-c0-gn0"/>
@@ -250,6 +253,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="SystemColor"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" name="SystemColor"/>
                                 <connections>
                                     <outlet property="configureButton" destination="81k-al-Gdb" id="omC-89-Qn5"/>
                                     <outlet property="discoverButton" destination="6uo-Vi-uEL" id="lqu-Ig-kMc"/>
@@ -435,8 +439,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="D0l-O3-9lm"/>
-        <segue reference="dvv-ML-asM"/>
+        <segue reference="CgR-jQ-gds"/>
         <segue reference="6rZ-TK-RLL"/>
     </inferredMetricsTieBreakers>
     <resources>
