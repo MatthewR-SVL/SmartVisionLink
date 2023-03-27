@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -167,7 +167,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Phase 1 Engineering";
+				ORGANIZATIONNAME = "Smart Vision Lights";
 				TargetAttributes = {
 					0B70DCDC21CC3535006D1420 = {
 						CreatedOnToolsVersion = 10.1;
@@ -175,7 +175,7 @@
 				};
 			};
 			buildConfigurationList = 0B70DCD821CC3535006D1420 /* Build configuration list for PBXProject "SmartVisionLink" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (

@@ -142,12 +142,12 @@ class LightViewController: SmartVisionViewController {
             flashButton.backgroundColor = UIColor(named: "colorAccent")
         }
         else{
-            flashButton.backgroundColor = .lightGray
+            flashButton.backgroundColor = UIColor(named: "ToggleColors")
         }
         
         if (light?.name.starts(with: "A1000"))!{
             continuousButton.isEnabled = false
-            continuousButton.backgroundColor = .gray
+            continuousButton.backgroundColor = UIColor(named: "ToggleColors")
         }
     
     }
@@ -156,10 +156,10 @@ class LightViewController: SmartVisionViewController {
     {
         light!.setMode(to: .CONTINUOUS)
         continuousButton.backgroundColor = UIColor(named:"colorAccent")
-        overdriveButton.backgroundColor = .lightGray
+        overdriveButton.backgroundColor = UIColor(named: "ToggleColors")
         initWidgets()
         svl.sendMessage((light?.batchConfigurationMessage(true))!)
-        saveButton.backgroundColor = .lightGray
+        saveButton.backgroundColor = UIColor(named: "ToggleColors")
         
         for zoneControlElement in zoneControlElements{
             zoneControlElement.updateUI()
@@ -170,10 +170,10 @@ class LightViewController: SmartVisionViewController {
     {
         light!.setMode(to: .OVERDRIVE)
         overdriveButton.backgroundColor = UIColor(named:"colorAccent")
-        continuousButton.backgroundColor = .lightGray
+        continuousButton.backgroundColor = UIColor(named: "ToggleColors")
         initWidgets()
         svl.sendMessage((light?.batchConfigurationMessage(true))!)
-        saveButton.backgroundColor = .lightGray
+        saveButton.backgroundColor = UIColor(named: "ToggleColors")
         
         for zoneControlElement in zoneControlElements{
             zoneControlElement.updateUI()
@@ -204,7 +204,7 @@ class LightViewController: SmartVisionViewController {
         }
         zoneControlElements[zoneId].updateUI()
         svl.sendMessage((light?.batchConfigurationMessage(true))!)
-        saveButton.backgroundColor = .lightGray
+        saveButton.backgroundColor = UIColor(named: "ToggleColors")
     }
     
     @objc func onZone0SwitchChange()
@@ -276,7 +276,7 @@ class LightViewController: SmartVisionViewController {
         }
         
         svl.sendMessage((light?.batchConfigurationMessage(false))!)
-        saveButton.backgroundColor = .lightGray
+        saveButton.backgroundColor = UIColor(named: "ToggleColors")
     }
     
     @objc func onSliderDone(_ zoneId: Int)
@@ -349,7 +349,7 @@ class LightViewController: SmartVisionViewController {
     {
         hideAlert()
         
-        if(saveButton.backgroundColor == .lightGray){
+        if(saveButton.backgroundColor == UIColor(named: "ToggleColors")){
             showTwoButtonAlert("Continue without saving?", "", "Yes", "No")
         }
         else{
@@ -378,11 +378,11 @@ class LightViewController: SmartVisionViewController {
         else{
             svl.sendMessage((light?.flashMessage(0, 0, light!.maxOverdrivePulseWidthUs))!)
             
-            if flashButton.backgroundColor == .lightGray{
+            if flashButton.backgroundColor == UIColor(named: "ToggleColors"){
                 flashButton.backgroundColor = UIColor(named: "colorAccent")
             }
             else{
-                flashButton.backgroundColor = .lightGray
+                flashButton.backgroundColor = UIColor(named: "ToggleColors")
             }
         }
         

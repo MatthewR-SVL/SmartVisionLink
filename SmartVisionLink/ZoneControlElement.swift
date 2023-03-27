@@ -40,7 +40,7 @@ class ZoneControlElement: UIView
         slider.minValue = CGFloat(MIN_PERCENTAGE)
         slider.setValue(CGFloat((self.zone.getPercentage())))
         slider.translatesAutoresizingMaskIntoConstraints = false
-        slider.backgroundColor = .white
+        slider.backgroundColor = UIColor(named: "SystemColor")
         return slider
     }()
     
@@ -107,7 +107,6 @@ class ZoneControlElement: UIView
         self.y = y
         self.width = width
         self.height = height
-        
     }
     
     private func commonInit()
