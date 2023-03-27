@@ -108,9 +108,10 @@ class SmartVisionViewController: BLEViewController, SmartVisionProtocol {
     }
     func showIndicator()
     {
+        actInd.isHidden = false
         actInd.frame = CGRect(x: 0.0, y: 0.0, width: 40.0, height: 40.0)
         actInd.style = UIActivityIndicatorView.Style.whiteLarge
-        actInd.color = UIColor(named: "colorPrimary")
+        actInd.color = UIColor(named: "Accent 1")
         actInd.center = CGPoint(x:self.view.center.x, y:self.view.center.y + 100.0)
         actInd.hidesWhenStopped = true
         self.view.addSubview(actInd)
