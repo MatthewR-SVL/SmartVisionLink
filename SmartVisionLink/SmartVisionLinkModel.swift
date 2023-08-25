@@ -200,9 +200,12 @@ class SmartVisionLinkModel: SmartVisionProtocol
         }
         
         for i in 0...SVL_MAX_NAME_CHARS{
-            let c = Character(UnicodeScalar(message.data[13+i]))
+            let c = Character(UnicodeScalar(message.data[17+i]))
+            print("thisChar is:")
+            print(c)
             name.append(c)
             if(c == "\0"){
+                print(name)
                 break
             }
         }

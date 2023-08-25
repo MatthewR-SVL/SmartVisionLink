@@ -72,7 +72,7 @@ class SmartVisionLight: SmartVisionLightProtocol
         self.inputConfiguration = inputConfiguration
         self.maxOverdriveDutyCycle = maxOverdriveDutyCycle
         self.model = model
-        print("Creating Light = "+name+"\nNum Zones = "+String(numZones)+" Num Cal = "+String(numCal)+" MaxPW = "+String(self.maxOverdrivePulseWidthUs))
+        print("Creating Light = "+String(name)+"\nNum Zones = "+String(numZones)+" Num Cal = "+String(numCal)+" MaxPW = "+String(self.maxOverdrivePulseWidthUs))
         zones = []
         for i in 0..<numZones
         {
