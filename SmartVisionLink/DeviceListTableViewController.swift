@@ -127,6 +127,7 @@ class DeviceListTableViewController: SmartVisionTableViewController {
     
     override func onBleDisconnected(from device: BLEDevice) {
         svl.stopHeartbeat()
+        svl.sendEndComMessage()
         hideAlert()
         performSegue(withIdentifier: "deviceListToMainSegue", sender: nil)
     }

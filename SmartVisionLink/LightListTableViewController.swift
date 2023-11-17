@@ -105,6 +105,9 @@ class LightListTableViewController: SmartVisionTableViewController
     @objc func onDisconnectButtonClick()
     {
         svl.stopHeartbeat()
+        usleep(100000)
+        svl.sendEndComMessage()
+        usleep(100000)
         ble.disconnect(from: svl.ram!)
     }
     
